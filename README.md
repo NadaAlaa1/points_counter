@@ -24,10 +24,10 @@ A responsive Flutter application designed to keep track of team points dynamical
 
 ## Demo
 
-Here are screenshots of the app in action:
-
-![Home Screen](assets/screenshots/home_screen.png)
-![Points Added](assets/screenshots/points_added.png)
+<p align="center">
+  <img src="assets/screenshots/home_screen.png" alt="Home Screen" width="300">
+  <img src="assets/screenshots/points_added.png" alt="Points Added" width="300">
+</p>
 
 
 ## Getting Started
