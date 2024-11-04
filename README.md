@@ -7,7 +7,6 @@ A responsive Flutter application designed to keep track of team points dynamical
 - [Features](#features)
 - [Demo](#demo)
 - [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Technical Details](#technical-details)
 - [Dependencies](#dependencies)
@@ -56,21 +55,6 @@ Follow these steps to set up and run the app locally.
    ```bash
    flutter run
 
-## Project Structure
-
-The core files are organized as follows:
-
-```plaintext
-points_counter/
-├── lib/
-│   ├── main.dart         # Main entry file with UI and app logic
-├── pubspec.yaml          # Project dependencies and metadata
-└── README.md             # Project documentation
-
-### Key Components
-
-- `main.dart`: Contains the `PointsCounter` class, which builds the app's UI with two sections for each team. The `_buildPointButton` helper function creates buttons to add points, and `AutoSizeTextField` dynamically displays points.
-
 ## Usage
 
 1. **Add Points**: Tap the buttons for either **Team A** or **Team B** to add 1, 2, or 3 points.
@@ -117,3 +101,4 @@ Contributions are welcome! To contribute:
    git push origin feature/your-feature-name
 
 5. **Create a Pull Request** explaining your changes
+
