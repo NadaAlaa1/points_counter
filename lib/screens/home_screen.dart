@@ -8,6 +8,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int teamAPoints = 0;
+    int teamBPoints = 0;
     return BlocConsumer<CounterCubit, CounterState>(
         builder: (context, state) {
           return Scaffold(
@@ -32,9 +34,9 @@ class HomeScreen extends StatelessWidget {
                               fontSize: 32,
                             ),
                           ),
-                          const Text(
-                            '0',
-                            style: TextStyle(
+                          Text(
+                            '${BlocProvider.of<CounterCubit>(context).teamAPoints}',
+                            style: const TextStyle(
                               fontSize: 150,
                             ),
                           ),
@@ -110,9 +112,9 @@ class HomeScreen extends StatelessWidget {
                               fontSize: 32,
                             ),
                           ),
-                          const Text(
-                            '0',
-                            style: TextStyle(
+                          Text(
+                            '${BlocProvider.of<CounterCubit>(context).teamBPoints}',
+                            style: const TextStyle(
                               fontSize: 150,
                             ),
                           ),
@@ -191,6 +193,12 @@ class HomeScreen extends StatelessWidget {
             ),
           );
         },
-        listener: (context, state) {});
+        listener: (context, state) {
+          if(state is CounterAIncrementState){
+            teamAPoints = BlocProvider.of<CounterCubit>(context).teamAPoints;
+          }else{
+            teamBPoints = BlocProvider.of<CounterCubit>(context).teamBPoints;
+          }
+        });
   }
 }
