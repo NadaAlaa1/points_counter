@@ -11,8 +11,6 @@ A responsive Flutter application designed to keep track of team points dynamical
 - [Technical Details](#technical-details)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
